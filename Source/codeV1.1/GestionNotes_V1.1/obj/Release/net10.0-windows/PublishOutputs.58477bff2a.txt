@@ -1,0 +1,5 @@
+C:\Users\steven.duquette\source\repos\A26\GestionNotes\GestionNotes\bin\Release\net10.0-windows\publish\GestionNotes.exe
+C:\Users\steven.duquette\source\repos\A26\GestionNotes\GestionNotes\bin\Release\net10.0-windows\publish\GestionNotes.dll
+C:\Users\steven.duquette\source\repos\A26\GestionNotes\GestionNotes\bin\Release\net10.0-windows\publish\GestionNotes.deps.json
+C:\Users\steven.duquette\source\repos\A26\GestionNotes\GestionNotes\bin\Release\net10.0-windows\publish\GestionNotes.runtimeconfig.json
+C:\Users\steven.duquette\source\repos\A26\GestionNotes\GestionNotes\bin\Release\net10.0-windows\publish\GestionNotes.pdb

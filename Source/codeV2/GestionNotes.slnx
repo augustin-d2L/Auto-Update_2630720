@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="GestionV2/GestionNotes.csproj" />
+  <Project Path="Updater/Updater.csproj" />
+</Solution>

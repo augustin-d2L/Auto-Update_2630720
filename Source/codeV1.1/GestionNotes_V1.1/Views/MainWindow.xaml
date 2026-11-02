@@ -1,0 +1,125 @@
+﻿<Window x:Class="GestionNotes.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Gestion des notes"
+        Height="600"
+        Width="800"
+        MinHeight="500"
+        MinWidth="650"
+        WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0"
+                   Text="Gestion des étudiants"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   Margin="0,0,0,20"/>
+
+        <!-- Ajout d'un étudiant -->
+        <Grid Grid.Row="1" Margin="0,0,0,15">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Margin="0,0,10,0">
+                <TextBlock Text="Prénom" Margin="0,0,0,5"/>
+                <TextBox Text="{Binding Prénom,
+                                        UpdateSourceTrigger=PropertyChanged}"
+                         Padding="6"/>
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" Margin="0,0,10,0">
+                <TextBlock Text="Nom" Margin="0,0,0,5"/>
+                <TextBox Text="{Binding Nom,
+                                        UpdateSourceTrigger=PropertyChanged}"
+                         Padding="6"/>
+            </StackPanel>
+
+            <Button Grid.Column="2"
+                    Content="Ajouter étudiant"
+                    Command="{Binding AjouterÉtudiantCommande}"
+                    Padding="12,6"
+                    VerticalAlignment="Bottom"/>
+        </Grid>
+
+        <!-- Liste des étudiants -->
+        <DataGrid Grid.Row="2"
+                  ItemsSource="{Binding Étudiants}"
+                  SelectedItem="{Binding ÉtudiantSélectionné,
+                                          Mode=TwoWay}"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="True"
+                  CanUserAddRows="False"
+                  SelectionMode="Single"
+                  Margin="0,0,0,15">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID"
+                                    Binding="{Binding Id}"
+                                    Width="60"/>
+
+                <DataGridTextColumn Header="Prénom"
+                                    Binding="{Binding Prénom}"
+                                    Width="*"/>
+
+                <DataGridTextColumn Header="Nom"
+                                    Binding="{Binding Nom}"
+                                    Width="*"/>
+
+                <DataGridTextColumn Header="Nombre de notes"
+                                    Binding="{Binding Notes.Count}"
+                                    Width="130"/>
+
+                <DataGridTextColumn Header="Moyenne"
+                                    Binding="{Binding Moyenne,
+                                              StringFormat={}{0:F2}}"
+                                    Width="100"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Ajout et consultation des notes -->
+        <GroupBox Grid.Row="3"
+                  Header="Notes de l'étudiant sélectionné"
+                  Padding="10">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <ListBox Grid.Column="0"
+                         ItemsSource="{Binding ÉtudiantSélectionné.Notes}"
+                         Height="65"
+                         Margin="0,0,10,0"/>
+
+                <StackPanel Grid.Column="1"
+                            Margin="0,0,10,0">
+                    <TextBlock Text="Nouvelle note (/100)"
+                               Margin="0,0,0,5"/>
+                    <TextBox Text="{Binding NoteÀAjouter,
+                                            UpdateSourceTrigger=PropertyChanged}"
+                             Padding="6"
+                             Width="130"/>
+                </StackPanel>
+
+                <Button Grid.Column="2"
+                        Content="Ajouter la note"
+                        Command="{Binding AjouterNoteCommande}"
+                        Padding="12,6"
+                        VerticalAlignment="Bottom"/>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>

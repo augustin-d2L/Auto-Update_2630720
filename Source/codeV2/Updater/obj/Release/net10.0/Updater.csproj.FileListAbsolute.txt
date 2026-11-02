@@ -1,0 +1,15 @@
+C:\GestionNotes-Depot\ActualVersion\Updater\bin\Release\net10.0\Updater.exe
+C:\GestionNotes-Depot\ActualVersion\Updater\bin\Release\net10.0\Updater.deps.json
+C:\GestionNotes-Depot\ActualVersion\Updater\bin\Release\net10.0\Updater.runtimeconfig.json
+C:\GestionNotes-Depot\ActualVersion\Updater\bin\Release\net10.0\Updater.dll
+C:\GestionNotes-Depot\ActualVersion\Updater\bin\Release\net10.0\Updater.pdb
+C:\GestionNotes-Depot\ActualVersion\Updater\obj\Release\net10.0\Updater.GeneratedMSBuildEditorConfig.editorconfig
+C:\GestionNotes-Depot\ActualVersion\Updater\obj\Release\net10.0\Updater.AssemblyInfoInputs.cache
+C:\GestionNotes-Depot\ActualVersion\Updater\obj\Release\net10.0\Updater.AssemblyInfo.cs
+C:\GestionNotes-Depot\ActualVersion\Updater\obj\Release\net10.0\Updater.csproj.CoreCompileInputs.cache
+C:\GestionNotes-Depot\ActualVersion\Updater\obj\Release\net10.0\Updater.dll
+C:\GestionNotes-Depot\ActualVersion\Updater\obj\Release\net10.0\refint\Updater.dll
+C:\GestionNotes-Depot\ActualVersion\Updater\obj\Release\net10.0\Updater.pdb
+C:\GestionNotes-Depot\ActualVersion\Updater\obj\Release\net10.0\Updater.genruntimeconfig.cache
+C:\GestionNotes-Depot\ActualVersion\Updater\obj\Release\net10.0\ref\Updater.dll
+C:\GestionNotes-Depot\ActualVersion\Updater\obj\Release\net10.0\Updater.csproj.Up2Date
