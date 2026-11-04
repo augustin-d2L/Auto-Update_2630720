@@ -82,4 +82,5 @@ s'affiche et l'application reste ouverte et utilisable. Le journal d'Updater se 
 >
 > <img width="1222" height="771" alt="Capture d’écran 2026-11-02 140944" src="https://github.com/user-attachments/assets/d201323f-436f-4901-8da2-01a25acb237c" />
 
-# Travail de collaboration entre `Antoine V. (2630762)` et `Augustin D. (2630720)`
+# Travail de collaboration entre `Antoine V. (2630762)` 
+# et `Augustin D. (2630720)`
